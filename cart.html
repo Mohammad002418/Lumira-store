@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart · Lumira</title>
+<meta name="description" content="Lumira — Technology That Moves With You. Smartphones, laptops, smartwatches, audio and accessories.">
+<link rel="icon" href="brand/lumira-logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart.html">
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<div class="container">
+  <div class="page-head"><h1>Your cart</h1></div>
+  <div class="cart-layout">
+    <section class="panel" aria-labelledby="lines-h">
+      <h2 id="lines-h" class="sr-only">Items</h2>
+      <div id="lines"></div>
+      <div id="empty" class="empty-cart" hidden>
+        <h2>Your cart is empty</h2>
+        <p>Find something you love in the catalog.</p>
+        <a class="btn btn-primary" href="products.html">Continue shopping</a>
+      </div>
+    </section>
+    <aside class="panel" id="cart-body" aria-labelledby="sum-h" hidden>
+      <h2 id="sum-h" style="font-size:1.2rem">Order summary</h2>
+      <div class="summary-row"><span>Subtotal</span><span id="sub">$0.00</span></div>
+      <div class="summary-row"><span>Shipping &amp; tax</span><span>Confirmed at checkout</span></div>
+      <div class="summary-row total"><span>Estimated total</span><span id="total">$0.00</span></div>
+      <p class="notice" style="margin-top:.8rem">Prices are shown in US dollars. Shipping and tax are confirmed at checkout.</p>
+      <a class="btn btn-primary btn-block" href="checkout.html">Proceed to checkout</a>
+      <p style="margin:.6rem 0 0;text-align:center"><a href="products.html">Continue shopping</a></p>
+    </aside>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js" defer></script>
+<script src="js/page-cart.js" defer></script>
+</body>
+</html>

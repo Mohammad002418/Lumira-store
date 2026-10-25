@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Lumira</title>
+<meta name="description" content="Lumira — Technology That Moves With You. Smartphones, laptops, smartwatches, audio and accessories.">
+<link rel="icon" href="brand/lumira-logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact.html">
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="hero-soft compact">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>We are happy to help</h1>
+    <p class="lead">Questions about a product, an order or a policy? Send us a message and we will reply by email.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container contact-grid">
+    <aside class="contact-side">
+      <article class="side-card highlight">
+        <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
+        <h2>Email us directly</h2>
+        <p>Write to us for product questions, order updates or anything else. Include your order reference if you have one.</p>
+        <a class="mail-btn" href="mailto:noorsmam99@gmail.com">noorsmam99@gmail.com</a>
+      </article>
+      <article class="side-card">
+        <h2>Before you write</h2>
+        <p>Many answers are already on these pages.</p>
+        <ul class="quick-links">
+          <li><a href="shipping.html">Shipping <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="returns.html">Returns <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="warranty.html">Warranty <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="privacy.html">Privacy policy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        </ul>
+      </article>
+    </aside>
+
+    <form class="form-card" id="contact-form" novalidate>
+      <h2>Send a message</h2>
+      <p class="form-intro">We usually reply by email. Fields marked with * are required.</p>
+      <div class="field">
+        <label for="c-name">Name *</label>
+        <input id="c-name" name="name" required maxlength="100" autocomplete="name" placeholder="Your full name">
+        <p class="error" data-err="name"></p>
+      </div>
+      <div class="field">
+        <label for="c-email">Email *</label>
+        <input id="c-email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="you@example.com">
+        <p class="error" data-err="email"></p>
+      </div>
+      <div class="field">
+        <label for="c-msg">Message *</label>
+        <textarea id="c-msg" name="message" rows="5" required minlength="10" maxlength="2000" placeholder="How can we help?"></textarea>
+        <p class="error" data-err="message"></p>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Send message</button>
+      <p id="cmsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js" defer></script>
+<script src="js/page-contact.js" defer></script>
+</body>
+</html>

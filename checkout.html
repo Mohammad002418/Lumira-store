@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · Lumira</title>
+<meta name="description" content="Lumira — Technology That Moves With You. Smartphones, laptops, smartwatches, audio and accessories.">
+<link rel="icon" href="brand/lumira-logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart.html">
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<div class="container">
+  <div class="page-head"><h1>Checkout</h1>
+    <p class="notice">Pay on delivery: your order is saved and our team confirms it with you. No online payment is taken.</p></div>
+  <div class="checkout-layout">
+    <form class="panel checkout" id="form" novalidate>
+      <fieldset>
+        <legend>Contact</legend>
+        <label for="f-name">Full name<input id="f-name" name="name" autocomplete="name" maxlength="100" required></label>
+        <p class="error" data-err="name"></p>
+        <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email" maxlength="254" required></label>
+        <p class="error" data-err="email"></p>
+        <label for="f-phone">Phone<input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="20" required></label>
+        <p class="error" data-err="phone"></p>
+      </fieldset>
+      <fieldset>
+        <legend>Shipping address</legend>
+        <label for="f-street">Street address<input id="f-street" name="street" autocomplete="street-address" maxlength="150" required></label>
+        <p class="error" data-err="street"></p>
+        <label for="f-city">City<input id="f-city" name="city" autocomplete="address-level2" maxlength="80" required></label>
+        <p class="error" data-err="city"></p>
+        <label for="f-postal">Postal code<input id="f-postal" name="postal" autocomplete="postal-code" maxlength="20"></label>
+        <p class="error" data-err="postal"></p>
+        <label for="f-country">Country<input id="f-country" name="country" autocomplete="country-name" maxlength="80" required></label>
+        <p class="error" data-err="country"></p>
+      </fieldset>
+      <fieldset>
+        <legend>Payment method</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="pay" value="cod" checked> Pay on delivery</label>
+          <label><input type="radio" name="pay" value="card" disabled> Card (not available in demo)</label>
+        </div>
+        <p class="error" data-err="payment"></p>
+      </fieldset>
+      <button class="btn btn-primary btn-block" type="submit" id="place">Place order</button>
+      <div id="status" class="status" role="status"></div>
+    </form>
+    <aside class="panel" aria-labelledby="sum-h">
+      <h2 id="sum-h" style="font-size:1.2rem">Order summary</h2>
+      <div id="items"></div>
+      <div class="summary-row"><span>Subtotal</span><span id="sub">$0.00</span></div>
+      <div class="summary-row"><span>Shipping &amp; tax</span><span>Confirmed by business</span></div>
+      <div class="summary-row total"><span>Total</span><span id="total">$0.00</span></div>
+    </aside>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js" defer></script>
+<script src="js/page-checkout.js" defer></script>
+</body>
+</html>

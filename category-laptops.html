@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laptops · Lumira</title>
+<meta name="description" content="Lumira — Technology That Moves With You. Smartphones, laptops, smartwatches, audio and accessories.">
+<link rel="icon" href="brand/lumira-logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="products.html" data-category="laptops">
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<div class="container page-head">
+  <p class="eyebrow">Catalog</p>
+  <h1 id="page-title">All products</h1>
+</div>
+<section style="padding-top:0"><div class="container">
+  <div class="toolbar">
+    <label>Search<input id="f-q" type="search" maxlength="80" placeholder="Name, brand or model"></label>
+    <label>Sort by
+      <select id="f-sort">
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </label>
+  </div>
+  <div class="layout">
+    <aside class="filters" aria-label="Filters">
+      <fieldset id="f-cat-group"><legend>Category</legend><div id="f-cat"></div></fieldset>
+      <fieldset><legend>Brand</legend><div id="f-brand"></div></fieldset>
+      <fieldset><legend>Price (USD)</legend>
+        <label for="f-price">Max price <output id="f-price-out"></output></label>
+        <input id="f-price" type="range" min="0" max="2000" step="10" value="2000" style="width:100%">
+      </fieldset>
+      <fieldset><legend>Availability</legend>
+        <label><input id="f-stock" type="checkbox"> In stock only</label>
+      </fieldset>
+      <button class="btn btn-ghost btn-block" id="f-reset" type="button">Clear filters</button>
+    </aside>
+    <div>
+      <p class="count" id="count" role="status"></p>
+      <div class="grid" id="results"></div>
+      <div class="empty" id="empty" hidden>
+        <h3>No products match your search</h3>
+        <p>Try another keyword or clear the filters.</p>
+        <button class="btn btn-primary" id="f-reset2" type="button">Clear filters</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js" defer></script>
+<script src="js/page-products.js" defer></script>
+</body>
+</html>

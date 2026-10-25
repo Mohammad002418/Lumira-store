@@ -1,0 +1,15 @@
+{
+  "name": "lumira-netlify",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Lumira store for Netlify (static site + Netlify Functions + Netlify Blobs)",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test tests/netlify.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.0.0"
+  },
+  "license": "UNLICENSED"
+}
